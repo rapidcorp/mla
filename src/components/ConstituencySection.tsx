@@ -29,7 +29,7 @@ const ConstituencySection = () => {
               <p className="text-muted-foreground text-sm leading-relaxed">
                 {t("155वां विधानसभा क्षेत्र, उदयपुर जिला, राजस्थान", "155th Assembly Constituency, Udaipur District, Rajasthan")}
               </p>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-2 gap-2 sm:gap-3">
                 {[
                   { icon: "📍", label: t("जनसंख्या", "Population"), value: "~3.31L" },
                   { icon: "🏘️", label: t("गाँव", "Villages"), value: "249-305" },
@@ -38,7 +38,7 @@ const ConstituencySection = () => {
                   { icon: "📚", label: t("साक्षरता", "Literacy"), value: "53-63%" },
                   { icon: "👥", label: "ST", value: "19-21%" },
                 ].map((item, i) => (
-                  <div key={i} className="bg-muted rounded-lg p-3 text-center">
+                  <div key={i} className="bg-muted rounded-lg p-2 sm:p-3 text-center">
                     <span className="text-lg">{item.icon}</span>
                     <div className="text-xs text-muted-foreground">{item.label}</div>
                     <div className="font-semibold text-sm">{item.value}</div>

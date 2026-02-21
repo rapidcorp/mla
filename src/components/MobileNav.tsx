@@ -42,7 +42,7 @@ const MobileNav = () => {
       </nav>
 
       {menuOpen && (
-        <div className="lg:hidden fixed inset-0 z-40 bg-background/98 backdrop-blur-sm flex flex-col items-center justify-center gap-6" onClick={() => setMenuOpen(false)}>
+        <div className="lg:hidden fixed inset-0 z-[60] bg-background/98 backdrop-blur-sm flex flex-col items-center justify-center gap-5" onClick={() => setMenuOpen(false)}>
           {[
             { id: "hero", hi: "होम", en: "Home" },
             { id: "about", hi: "परिचय", en: "About" },
@@ -55,14 +55,14 @@ const MobileNav = () => {
             <button
               key={item.id}
               onClick={() => scrollTo(item.id)}
-              className="text-2xl font-display font-bold text-foreground hover:text-primary transition-colors"
+              className="text-lg font-display font-bold text-foreground hover:text-primary transition-colors py-1"
             >
               {t(item.hi, item.en)}
             </button>
           ))}
           <button
             onClick={(e) => { e.stopPropagation(); toggleLanguage(); }}
-            className="mt-4 px-5 py-2 rounded-full border-2 border-primary text-primary font-semibold"
+            className="mt-2 px-5 py-2 rounded-full border-2 border-primary text-primary font-semibold text-sm"
           >
             {lang === "hi" ? "Switch to English" : "हिंदी में देखें"}
           </button>

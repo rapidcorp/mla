@@ -48,7 +48,7 @@ const GallerySection = () => {
       {/* Lightbox */}
       {selected !== null && (
         <div className="fixed inset-0 z-50 bg-foreground/80 backdrop-blur-sm flex items-center justify-center p-4" onClick={() => setSelected(null)}>
-          <div className="relative bg-card rounded-2xl p-8 max-w-md w-full text-center shadow-2xl" onClick={(e) => e.stopPropagation()}>
+          <div className="relative bg-card rounded-2xl p-5 sm:p-8 max-w-md w-full text-center shadow-2xl mx-4" onClick={(e) => e.stopPropagation()}>
             <button onClick={() => setSelected(null)} className="absolute top-3 right-3 text-muted-foreground hover:text-foreground">
               <X size={24} />
             </button>

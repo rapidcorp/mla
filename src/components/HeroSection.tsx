@@ -22,7 +22,7 @@ const HeroSection = () => {
           <img
             src={heroImg}
             alt="Udailal Dangi"
-            className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-primary-foreground shadow-2xl"
+            className="w-36 h-36 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-primary-foreground shadow-2xl"
           />
           <div className="absolute -bottom-2 -right-2 bg-primary-foreground text-primary rounded-full w-12 h-12 flex items-center justify-center font-display font-bold text-xs shadow-lg">
             BJP
@@ -30,12 +30,12 @@ const HeroSection = () => {
         </div>
 
         {/* Name */}
-        <h1 className="text-4xl md:text-6xl font-display font-extrabold text-primary-foreground text-shadow mb-2">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-display font-extrabold text-primary-foreground text-shadow mb-2">
           {t("उदयलाल डांगी", "Udailal Dangi")}
         </h1>
 
         {/* Title */}
-        <p className="text-xl md:text-2xl text-primary-foreground/90 font-medium mb-4">
+        <p className="text-lg sm:text-xl md:text-2xl text-primary-foreground/90 font-medium mb-4">
           {t("विधायक, वल्लभनगर", "MLA, Vallabhnagar")}
         </p>
 
@@ -75,8 +75,8 @@ const HeroSection = () => {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce-slow">
-          <ChevronDown size={32} className="text-primary-foreground/70" />
+        <div className="absolute bottom-20 lg:bottom-8 left-1/2 -translate-x-1/2 animate-bounce-slow">
+          <ChevronDown size={28} className="text-primary-foreground/70" />
         </div>
       </div>
     </section>

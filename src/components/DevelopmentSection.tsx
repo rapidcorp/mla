@@ -61,8 +61,8 @@ const DevelopmentSection = () => {
               </h3>
               <div className="grid grid-cols-2 gap-4">
                 {assemblyStats.map((stat, i) => (
-                  <div key={i} className="text-center bg-background rounded-lg p-4 shadow-sm">
-                    <div className="text-2xl font-display font-bold text-primary">{stat.value}</div>
+                  <div key={i} className="text-center bg-background rounded-lg p-3 sm:p-4 shadow-sm">
+                    <div className="text-xl sm:text-2xl font-display font-bold text-primary">{stat.value}</div>
                     <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
                   </div>
                 ))}

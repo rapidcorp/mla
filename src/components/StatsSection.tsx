@@ -37,13 +37,13 @@ const StatsSection = () => {
           {stats.map((stat, i) => (
             <div
               key={i}
-              className={`bg-card rounded-xl p-6 text-center shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 ${
+              className={`bg-card rounded-xl p-4 md:p-6 text-center shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 ${
                 isVisible ? "section-fade-in visible" : "section-fade-in"
               }`}
               style={{ transitionDelay: `${i * 100}ms` }}
             >
-              <stat.icon className={`mx-auto mb-3 ${stat.color}`} size={32} />
-              <div className={`text-2xl md:text-3xl font-display font-bold ${stat.color}`}>
+              <stat.icon className={`mx-auto mb-2 md:mb-3 ${stat.color}`} size={24} />
+              <div className={`text-xl md:text-3xl font-display font-bold ${stat.color}`}>
                 {stat.prefix}
                 {isVisible ? <CountDisplay end={stat.value} suffix={stat.suffix} /> : "0"}
               </div>
